@@ -21,28 +21,9 @@ Tags: {{tags separator=" | "}}
     <a class="share_auto icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_auto">Facebook</span></a>
     <a class="share_auto icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_auto">Google+</span></a>
     </div>
-        {{#if author}}
-        <footer class="postfooter_auto">
-        <address itemscope itemtype="http://schema.org/Person">
-        {{#if author.image}}
-        <div class="authorimage_auto"><img src="{{author.image}}" itemprop="image" /></div>
-        {{/if}}
-        <h4 class="authorname_auto"><span itemprop="author">{{author.name}}</span></h4>
-        {{#if author.website}}
-        <div class="authorwebsite_auto"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
-        {{/if}}
-        </address>
-        <div class="authorbio_auto">
-        <p>{{author.bio}}</p>
-        </div>
-        </footer>
-        {{/if}}
+
 </article>
 {{/post}}
-{{#if pagination}}
-<div class="pagination_auto">
-{{{pagination}}}
-</div>
-{{/if}}
+
 </main>
 {{> footer}}

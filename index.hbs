@@ -18,7 +18,9 @@
 <h1 class="posttitle_auto" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
 </header>
 <div class="postcontent_auto" itemprop="articleBody">
-{{content}}
+<section class="post-excerpt">
+            <p>{{excerpt}}<a href="{{{url}}}" rel="bookmark">&hellip;</p></a>
+        </section>
 </div>
 {{#if tags}}
 <div class="posttags_auto">
@@ -27,10 +29,6 @@ Tags: {{tags separator=" | "}}
 {{/if}}
 </article>
 {{/foreach}}
-{{#if pagination}}
-<div class="pagination_auto">
-{{{pagination}}}
-</div>
-{{/if}}
+
 </main>
 {{> footer}}
